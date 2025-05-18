@@ -1,0 +1,119 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: #f4eae3;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    transition: 500ms;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    max-width: 595px;
+    border-radius: 10px;
+}
+main:hover {
+    transform: scale(1.01);
+}
+section img {
+    width: 300px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+aside {
+    margin: 32px;
+}
+aside h2 {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgb(148, 146, 146);
+    margin: 20px 0px;
+
+}
+
+aside h1 {
+    font-family: Fraunces;
+    margin: 20px 0px;
+    width: 200px;
+}
+
+p {
+    font-family: Montserrat;
+    color: rgba(109, 109, 109, 0.722);
+    font-size: 14px;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+.values {
+    width: 80%;
+    display: flex;
+    margin: 40px 0px;
+}
+.promo_value {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3d8268;
+    font-family: Fraunces;
+    margin-right: 10%;
+}
+.value {
+    font-family: Fraunces;
+    color: rgb(109, 109, 109);
+    text-decoration: line-through;
+
+}
+.cart_add {
+    transition: 300ms;
+    font-family: Montserrat;
+    font-weight: 600;
+    display: flex;
+    margin: auto;
+    background-color: #3d8268;
+    max-width: 235px;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+.cart_add img {
+    width: 14px;
+    margin-right: 10px;
+}
+.cart_add:hover {
+    background-color: #1a4031;
+}
+@media (max-width: 595px) {
+    body {
+        height: 100vh;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+    }
+    aside h1 {
+        width: auto;
+    }
+    aside h2 {
+        margin: -10px 0px -10px 0px;
+    }
+    section img {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: auto;
+    }
+}
